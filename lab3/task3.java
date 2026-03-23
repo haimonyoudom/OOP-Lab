@@ -155,12 +155,15 @@ public class task3 {
                         {break;}
                     }
                     break;
+                case 0:
+                    System.out.println("Exit Program ...");
+                    break; 
                 default:
                     System.out.println("Invalid choice");
                     break;
             }
             if(choice == 0)
-            {
+            {   
                 break;
             }
         }

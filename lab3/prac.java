@@ -38,6 +38,11 @@ public class prac {
         stuTotal++;
         Student newStu = new Student();
         newStu.setStudentInfo("Tola", 18);
+        System.out.println("\tOrigin :");
+        for (int i = 0; i<stuTotal;i++)
+        {
+            System.out.println(stus[i].getStudentInfo());
+        }
         //1
         // for (int i = 0;i< stuTotal;i++)
         // {
@@ -55,15 +60,17 @@ public class prac {
         // stus[0]=newStu;
         // stuTotal++;
         //3
+        System.out.println("\tAfter deleted");
         for (int i = 0;i< stuTotal;i++)
         {
             if (stus[i].getStudentInfo().equals("Name : Alice, Age : 22"))
             {
                 stus[i] =stus[i+1] ;
                 stus[i+1]=stus[i+2];
+                stuTotal--;
             }
         }
-
+        
         for (int i = 0; i<stuTotal;i++)
         {
             System.out.println(stus[i].getStudentInfo());
